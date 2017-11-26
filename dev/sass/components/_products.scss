@@ -1,0 +1,30 @@
+.products { 
+  .products-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 80px 0;    
+
+    .products-title {
+      text-transform: uppercase;
+      color: $color-primary;
+      letter-spacing: 2px;
+    }
+
+    .products-description {
+      max-width: 660px;
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .all, .products, .services {
+      text-align: center;
+      img {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+}
