@@ -5,6 +5,10 @@
     justify-content: space-between;
     align-items: center;
     background-color: $color-secundary;
+
+    @media (max-width: 576px) { 
+      
+    }
     
     .language {
       .language-op {
@@ -13,9 +17,24 @@
     }
 
     .social {
+      .phone {
+
+        color: $color-clean;
+        padding-right: 50px;
+        @media (max-width: 576px) { 
+          padding-right: 10px;          
+        }
+        span {
+          margin-top: -10px;
+          padding-left: 10px;
+        }
+      }
       .email {
         color: $color-clean;
         padding-right: 50px;
+        @media (max-width: 576px) { 
+          padding-right: 10px;          
+        }
       }
     }
   }
@@ -61,4 +80,17 @@
 
   }
   
+  
+.up {
+  border:0;
+  background-color: $color-primary;
+  color:$color-clean;
+  cursor: pointer;
+  padding:1rem;
+  font-size: 1rem;
+  position: fixed;
+  bottom:1rem;
+  right: 1rem;
+  z-index: 2;
+}
 }

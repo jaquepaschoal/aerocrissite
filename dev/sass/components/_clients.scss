@@ -18,6 +18,11 @@
       text-transform: uppercase;
       color: $color-primary;
       letter-spacing: 2px;
+
+      @media (max-width: 576px) { 
+        font-size: 32px;
+        text-align: center;
+      }
     }
 
     .clients-description {
@@ -25,6 +30,10 @@
       text-align: center;
       margin: 20px 0;
       color: $color-clean;
+
+      @media (max-width: 576px) { 
+        max-width: 350px;        
+      }
     }
 
     .clients-section {
@@ -32,6 +41,10 @@
       justify-content: space-around;
       width: 80%;
       text-align: center;
+
+      @media (max-width: 768px) { 
+        flex-wrap: wrap;
+      }
 
       .client {
         display: flex;
@@ -52,6 +65,15 @@
           cursor: pointer;
         }
 
+        @media (max-width: 768px) { 
+         width: calc(50% - 10px); 
+         margin: 5px;        
+        }
+
+        @media (max-width: 768px) { 
+          width: calc(100% - 10px); 
+          margin: 5px;        
+         }
       }
     }
 

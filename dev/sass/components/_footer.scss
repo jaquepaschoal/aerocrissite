@@ -1,9 +1,17 @@
-footer {
-  background-color: $color-primary;
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background-color: $color-secundary;
   color: $color-clean;
-  text-align: center;
-  margin:0;
+
+  @media (max-width: 576px) { 
+    flex-direction: column;
+  }
+
   p {
+    padding: 0;
     margin:0;
   }
 }

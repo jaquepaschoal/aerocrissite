@@ -5,6 +5,11 @@
     color: $color-primary;
     letter-spacing: 2px;
     text-align: center;
+
+    @media (max-width: 576px) { 
+      font-size: 32px;
+      text-align: center;
+    }
   }
   .skeleton-details {
     display:flex;
@@ -30,6 +35,12 @@
         text-transform: uppercase;
         color: $color-primary;
         letter-spacing: 2px;
+
+        @media (max-width: 576px) { 
+          font-size: 28px;
+          text-align: center;
+          margin-top: 30px;
+        }
       }
 
       p {

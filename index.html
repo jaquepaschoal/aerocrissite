@@ -1,10 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Aerocris</title>
+  <title>Aerocris - Usinagem de Peças </title>
+
+  <meta name="description" content="Indústria especializada na fabricação de ferramentais (Turn-Key), usinagem de peças de alta precisão e montagem de conjuntos.">
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Aerocris - Usinagem de Peças"/>
+  <meta property="og:description" content="Indústria especializada na fabricação de ferramentais (Turn-Key), usinagem de peças de alta precisão e montagem de conjuntos."/>
+  <meta property="og:url" content="http://aerocris.com"/>
+  <meta property="og:image" content="http://aerocris.com/img/og-image.png"/>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" href="favicon.ico">
 
   <link rel="stylesheet" href="assets/css/normalize.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">  
@@ -22,13 +33,14 @@
           <a href="#" class="language-op es"><img src="assets/images/language/es.png" alt="Idioma Espanhol - Espanha"></a>
         </div>
         <div class="social">
+          <i class="fa fa-phone phone" aria-hidden="true"><span>(14) 3846-1717</span></i>
           <a href="#"><i class="fa fa-envelope email" aria-hidden="true"></i></a>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12 header-menu">
-        <video autoplay="true" loop muted class="header-intro">
+        <video autoplay="true" loop muted  class="header-intro">
           <source src="assets/video/intro.mp4"> 
         </video>
         <div class="header-content">
@@ -43,22 +55,22 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
                   <ul class="navbar-nav menu-op">
                     <li class="nav-item">
-                      <a class="nav-link item" href="#">Empresa</a>
+                      <a class="nav-link item" href="#empresa">Empresa</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link item" href="#">Produtos</a>
+                      <a class="nav-link item" href="#produtos">Produtos</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link item" href="#">Qualidade</a>
+                      <a class="nav-link item" href="#qualidade">Qualidade</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link item" href="#">Estrutura</a>
+                      <a class="nav-link item" href="#estrutura">Estrutura</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link item" href="#">Clientes</a>
+                      <a class="nav-link item" href="#clientes">Clientes</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link item" href="#">Contato</a>
+                      <a class="nav-link item" href="#contato">Contato</a>
                     </li>
                   </ul>
                 </div>
@@ -66,9 +78,11 @@
         </div>
       </div>
     </div>
+    <button class="up"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
   </header>
 
-  <section class="company container-fluid">
+
+  <section id="empresa" class="anime company container-fluid">
     <div class="row company-details">
       <div class="company-image col-md-5 col-sm-12">
         <img class="image img-fluid" src="assets/images/company/company-01.jpg" alt="Imagem do interior da linha de produção da empresa Aerocris">
@@ -92,14 +106,14 @@
             <li class="certifications-item"><i class="fa fa-certificate certificate" aria-hidden="true"></i>ISO9001</li>
           </ul>
         </div>
-        <button type="button" class="btn btn-info">Ver certificados</button>
+        <button type="button" class="btn btn-info"><a href="assets/pdf/certificado.pdf"class="btn-certificate" target="_blank">Ver certificados</a></button>
         
       </div>
     </div>
   </section>
 
   <section class="info container-fluid">
-    <div class="row info-row justify-content-center align-items-center">
+    <div class="row anime info-row justify-content-center align-items-center">
       <div class="col-md-3">
         <span class="info-number">50+</span>
         <h2 class="info-title">Profissionais Qualificados</h2>
@@ -117,14 +131,14 @@
     </div>
   </section>
 
-  <section class="products container-fluid">
+  <section id="produtos" class="products container-fluid">
     <div class="row">
       <div class="col-md-12 products-details">
-        <h1 class="products-title" >Produtos / Serviços </h1>
-        <p class="products-description">
+        <h1 class="products-title anime" >Produtos / Serviços </h1>
+        <p class="products-description anime">
           Nossa indústria é especializada na fabricação de ferramentais (Turn-Key), usinagem de peças de alta precisão e montagem de conjuntos.
         </p>
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <ul class="nav nav-tabs anime" id="myTab" role="tablist">
             <li class="nav-item">
               <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="true">Todos</a>
             </li>
@@ -135,7 +149,7 @@
               <a class="nav-link" id="services-tab" data-toggle="tab" href="#services" role="tab" aria-controls="services" aria-selected="false">Ferramental</a>
             </li>
           </ul>
-          <div class="tab-content" id="myTabContent">
+          <div class="tab-content anime" id="myTabContent">
             <div class="tab-pane fade show all active" id="all" role="tabpanel" aria-labelledby="all-tab">
                 <img src="assets/images/product/product-1.jpg" alt="..." class="img-thumbnail">
                 <img src="assets/images/product/product-2.jpg" alt="..." class="img-thumbnail">
@@ -162,7 +176,7 @@
                 <img src="assets/images/product/ferramenta-11.jpg" alt="..." class="img-thumbnail">              
                 <img src="assets/images/product/ferramenta-12.jpg" alt="..." class="img-thumbnail">                   
               </div>
-            <div class="tab-pane products fade" id="products" role="tabpanel" aria-labelledby="products-tab">
+            <div class="tab-pane products fade anime" id="products" role="tabpanel" aria-labelledby="products-tab">
                 <img src="assets/images/product/product-1.jpg" alt="..." class="img-thumbnail">
                 <img src="assets/images/product/product-2.jpg" alt="..." class="img-thumbnail">
                 <img src="assets/images/product/product-3.jpg" alt="..." class="img-thumbnail">                
@@ -176,7 +190,7 @@
                 <img src="assets/images/product/product-11.jpg" alt="..." class="img-thumbnail">              
                 <img src="assets/images/product/product-12.jpg" alt="..." class="img-thumbnail"> 
             </div>
-            <div class="tab-pane services fade" id="services" role="tabpanel" aria-labelledby="services-tab">
+            <div class="tab-pane services fade anime" id="services" role="tabpanel" aria-labelledby="services-tab">
                 <img src="assets/images/product/ferramenta-1.jpg" alt="..." class="img-thumbnail">
                 <img src="assets/images/product/ferramenta-2.jpg" alt="..." class="img-thumbnail">
                 <img src="assets/images/product/ferramenta-3.jpg" alt="..." class="img-thumbnail">                
@@ -195,15 +209,16 @@
     </div>
   </section>
 
-  <section class="quality container-fluid">
+  <section id="qualidade" class="quality container-fluid">
     <div class="row">
       <div class="col-md-12 quality-details">
-        <h1 class="quality-title" >Qualidade</h1>
-        <p class="quality-description">
+        <h1 class="quality-title anime" >Qualidade</h1>
+        <p class="quality-description anime">
           Possui certificação nas normas AS9100, EN9100, JISQ9100 e ISO9001.
-          Utiliza as ferramentas do “lean manufacturing” para melhorar continuamente os processos
+          Utiliza as ferramentas do “lean manufacturing” para melhorar continuamente os processos.
+          Garantindo que as peças sejam entregues com <b>zero defeito</b> aos clientes.
         </p>
-        <div class="quality-section">
+        <div class="quality-section anime">
           <div class="quality-icon">
             <i class="fa fa-check fa-5x" aria-hidden="true"></i>
             <p>Certificações</p>
@@ -221,43 +236,50 @@
     </div>
   </section>
 
-  <section class="skeleton container-fluid">
-    <h1 class="skeleton-title">Infra-Estrutura</h1>
+  <section id="estrutura" class="skeleton container-fluid">
+    <h1 class="skeleton-title anime">Infra-Estrutura</h1>
     <div class="row skeleton-details">
-      <div class="skeleton-image col-md-5 col-sm-12">
+      <div class="skeleton-image anime col-md-5 col-sm-12">
         <img class="image img-fluid" src="assets/images/skeleton/team.jpg" alt="Imagem do interior da linha de produção da empresa Aerocris">
       </div>
-      <div class="skeleton-description col-md-6 col-sm-12">
+      <div class="skeleton-description anime col-md-6 col-sm-12">
         <h1 class="skeleton-subtitle">Equipe</h1>
         <p>
-          A equipe é formada por profissionais altamente qualificados, 
-          com larga experiência e know-how, que buscam constantemente o aperfeiçoamento profissional.  
+          Nossa equipe é formada por profissionais altamente qualificados, 
+          com larga experiência e know-how, que buscam sempre o aperfeiçoamento com as
+           mais modernas tecnologias e sistemas de gestão.
+          O time de profissionais de manutenção trabalha de forma preventiva para que os equipamentos
+           sejam conservados sempre em seu melhor estado de operação.
         </p>
       </div>
     </div>
     <div class="row skeleton-details reverse">
-        <div class="skeleton-image col-md-5 col-sm-12">
+        <div class="skeleton-image anime col-md-5 col-sm-12">
           <img class="image img-fluid" src="assets/images/skeleton/tool.jpg" alt="Imagem do interior da linha de produção da empresa Aerocris">
         </div>
-        <div class="skeleton-description col-md-6 col-sm-12">
+        <div class="skeleton-description anime col-md-6 col-sm-12">
           <h1 class="skeleton-subtitle">Equipamentos</h1>
           <p>
-            O parque fabril está equipado com modernos centros de usinagem
-            3, 4 e 5 eixos, torno CNCs, e máquinas convencionais. 
+              O parque fabril da Aerocris é composto por equipamentos modernos: Centros de Usinagem,
+               Tornos CNC’s e máquinas convencionais. Os processos da produção são devidamente controlados 
+               pelos operados para garantir a qualidade dos produtos.
+
+              
           </p>
         </div>
       </div>
   </section>
 
-  <section class="clients container-fluid">
+  <section id="clientes" class="clients container-fluid">
     <div class="row">
       <div class="col-md-12 clients-details">
-        <h1 class="clients-title" >Clientes</h1>
-        <p class="clients-description">
-          Possui certificação nas normas AS9100, EN9100, JISQ9100 e ISO9001.
-          Utiliza as ferramentas do “lean manufacturing” para melhorar continuamente os processos
+        <h1 class="clients-title anime" >Clientes</h1>
+        <p class="clients-description anime">
+          Possuimos um alto nível de clientes,  sempre os tratando com ética e profissionalismo acima de tudo, construindo
+          um relacionamento consistente e duradouro.
+
         </p>
-        <div class="clients-section">
+        <div class="clients-section anime">
           <div class="client">
             <h2>Embraer</h2>
           </div>
@@ -275,30 +297,41 @@
     </div>
   </section>
 
-  <section class="contact container-fluid">
+  <section id="contato" class="contact container-fluid">
     <div class="row">
       <div class="col-md-12 form-content">
-        <h1 class="contact-title">Contate-nos</h1>
-          <form class="col-md-6 offset-md-3">
-              <div class="form-group">
-                <label for="name">Nome Completo:</label>
-                <input type="name" class="form-control" id="name" aria-describedby="name" placeholder="Jaqueline Paschoal">
-              </div>
-
-              <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="seuemail@exemplo.com">
-              </div>
-
-              <div class="form-group">
-                <label for="message">Mensagem: </label>
-                <textarea class="form-control" id="message" rows="3"></textarea>
-              </div>
-     
-              <button type="submit" class="btn btn-primary">Enviar</button>
-          </form>
-          <div class="map">
-            <img class="img-fluid" src="assets/images/contact/map.png" alt="">
+        <h1 class="contact-title anime">Contate-nos</h1>
+        <div class="contact-info">
+            <form class="col-md-6 col-12 anime">
+                <div class="form-group">
+                  <label for="name"><b>Nome Completo:</b></label>
+                  <input type="name" class="form-control" id="name" aria-describedby="name" placeholder="Jaqueline Paschoal">
+                </div>
+  
+                <div class="form-group">
+                  <label for="email"><b>Email:</b></label>
+                  <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="seuemail@exemplo.com">
+                </div>
+  
+                <div class="form-group">
+                  <label for="message"><b>Mensagem:</b> </label>
+                  <textarea class="form-control" id="message" rows="3"></textarea>
+                </div>
+       
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+            <div class="contact-adress col-md-4 col-12 anime">
+              <h2 class="contact-subtitle">Localização</h2>
+              <p>Estamos lozalicados na Av. Marginal, 200A , na cidade de Areiópolis, interior de São Paulo.
+                Nossa indústria reside no Distrito Industrial, Cep:18670-000.
+              </p>
+              <h2 class="contact-subtitle">Contato</h2>
+              <p><b>E-mail:</b> dario.cristaldo@aerocris.ind.br</p>
+              <p><b>Telefone:</b> (14)-3846-1717</p>
+            </div>
+        </div>
+          
+          <div id="map" class="map anime">
           </div>
 
       </div>
@@ -306,8 +339,9 @@
 
   </section>
 
-  <footer>
-    <p>Desenvolvido por Grupo Coffe</p>
+  <footer class="footer">
+      <p>Copy right for Aerocris © 2017</p>
+      <p>Developer by Coffe team .</p>
   </footer>
 
 
@@ -316,5 +350,9 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script src="http://maps.google.com/maps/api/js?sensor=false&key=AIzaSyA0gmpmV65_cORWJY7g2mSLeV5CtLuN9Bg"></script>
+  <script src="assets/js/jquery-3.2.1.min.js"></script>
+  <script src="assets/js/scripts.min.js"></script>
+
 </body>
 </html>
