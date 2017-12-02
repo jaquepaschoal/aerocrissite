@@ -24,13 +24,13 @@
 define( 'DB_NAME', 'wp_aerocris' );
 
 /** Usuário do banco de dados MySQL */
-define( 'DB_USER', 'aerocris' );
+define( 'DB_USER', 'root' );
 
 /** Senha do banco de dados MySQL */
-define( 'DB_PASSWORD', 'aerocris12345678' );
+define( 'DB_PASSWORD', '' );
 
 /** Nome do host do MySQL */
-define( 'DB_HOST', 'mysql762.umbler.com' );
+define( 'DB_HOST', '' );
 
 /** Charset do banco de dados a ser usado na criação das tabelas. */
 define( 'DB_CHARSET', 'utf8' );

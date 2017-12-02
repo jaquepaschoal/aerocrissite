@@ -26,9 +26,10 @@
 
     .all, .products, .services {
       text-align: center;
-      img {
+      .img-gallery {
         width: 200px;
         height: 200px;
+        margin: 2.5px 0;
 
         @media (max-width: 576px) { 
           width: 300px;

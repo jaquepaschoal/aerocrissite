@@ -1,0 +1,6 @@
+.login h1 a {
+  background-image: url('../images/logo/aerocris-logo.png');
+  background-size: 250px 68px;
+  width: 250px;
+  height: 68px;
+}

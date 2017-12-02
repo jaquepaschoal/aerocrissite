@@ -3,7 +3,96 @@
 ?>
 <?php get_header(); ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-<section id="empresa" class="anime company container-fluid">
+
+  <section class="news container-fluid">
+  <h1 class="news-title anime">Notícias Aerocris</h1>
+  <p class="news-text anime">Nesta seção você fica sabendo das últimas novidades da nossa empresa.</p>
+    <div class="row news-main anime">
+      <div class="col-xl-3 col-md-12 last-news">
+        <h2 class="last-news-title">Últimas Notícias</h2>
+        <div>
+          <div href="#teste1" class="news-list">
+            <div class="news-picture">
+              <img class="picture"src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/news/airplane.jpg" alt="">
+            </div>
+            <p class="news-thumbnail-title">Este é o titulo da noticia noticia noticia</p>
+          </div>
+
+          <div href="#teste2" class="news-list">
+            <div class="news-picture">
+              <img class="picture"src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/news/airplane2.jpg" alt="">
+            </div>
+            <p class="news-thumbnail-title">Este é o titulo da noticia noticia noticia</p>
+          </div>
+
+          <div href="#teste3" class="news-list">
+            <div class="news-picture">
+              <img class="picture"src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/news/airplane.jpg" alt="">
+            </div>
+            <p class="news-thumbnail-title">Este é o titulo da noticia noticia noticia</p>
+          </div>
+        </div>
+      </div>
+
+      <article id="teste1" class="col-xl-6 col-md-12 news-complete active-news">
+        <div class="news-photo">
+          <img class="photo img-fluid"src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/news/airplane.jpg" alt="">
+        </div>
+        <div class="news-description">
+          <h1 class="title-main">Título da notícia1</h1>
+          <p class="news-content"> 
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lectus est, maximus eget turpis vel, 
+          sagittis ornare lacus. Mauris diam ex, convallis et egestas sagittis, eleifend id eros. Nulla facilisi. 
+          Aenean a purus ex. Suspendisse nec convallis neque, eget blandit risus. In congue dolor quis magna 
+          tristique dictum. Duis vitae risus dignissim ligula gravida commodo et quis felis. Cras sed pretium 
+          ipsum, quis vehicula diam. Proin ac eleifend odio. Curabitur fermentum lacus lorem, a semper nisl 
+          tristique id. In tempus vehicula lacus, sit amet volutpat justo convallis quis. Fusce vehicula mauris 
+          odio, consequat scelerisque dui fermentum vel. Nullam vel varius ex. Maecenas at ligula eu lorem maximus
+           scelerisque vitae ac leo. Quisque quis placerat dolor.
+          </p>
+        </div>
+      </article>
+
+      <article id="teste2" class="col-md-6 news-complete">
+        <div class="news-photo">
+          <img class="photo img-fluid"src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/news/airplane2.jpg" alt="">
+        </div>
+        <div class="news-description">
+          <h1 class="title-main">Título da notícia2</h1>
+          <p class="news-content"> 
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lectus est, maximus eget turpis vel, 
+          sagittis ornare lacus. Mauris diam ex, convallis et egestas sagittis, eleifend id eros. Nulla facilisi. 
+          Aenean a purus ex. Suspendisse nec convallis neque, eget blandit risus. In congue dolor quis magna 
+          tristique dictum. Duis vitae risus dignissim ligula gravida commodo et quis felis. Cras sed pretium 
+          ipsum, quis vehicula diam. Proin ac eleifend odio. Curabitur fermentum lacus lorem, a semper nisl 
+          tristique id. In tempus vehicula lacus, sit amet volutpat justo convallis quis. Fusce vehicula mauris 
+          odio, consequat scelerisque dui fermentum vel. Nullam vel varius ex. Maecenas at ligula eu lorem maximus
+           scelerisque vitae ac leo. Quisque quis placerat dolor.
+          </p>
+        </div>
+      </article>
+
+      <article id="teste3" class="col-md-6 news-complete">
+        <div class="news-photo">
+          <img class="photo img-fluid"src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/news/airplane.jpg" alt="">
+        </div>
+        <div class="news-description">
+          <h1 class="title-main">Título da notícia3</h1>
+          <p class="news-content"> 
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lectus est, maximus eget turpis vel, 
+          sagittis ornare lacus. Mauris diam ex, convallis et egestas sagittis, eleifend id eros. Nulla facilisi. 
+          Aenean a purus ex. Suspendisse nec convallis neque, eget blandit risus. In congue dolor quis magna 
+          tristique dictum. Duis vitae risus dignissim ligula gravida commodo et quis felis. Cras sed pretium 
+          ipsum, quis vehicula diam. Proin ac eleifend odio. Curabitur fermentum lacus lorem, a semper nisl 
+          tristique id. In tempus vehicula lacus, sit amet volutpat justo convallis quis. Fusce vehicula mauris 
+          odio, consequat scelerisque dui fermentum vel. Nullam vel varius ex. Maecenas at ligula eu lorem maximus
+           scelerisque vitae ac leo. Quisque quis placerat dolor.
+          </p>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section id="empresa" class="anime company container-fluid">
     <div class="row company-details">
       <div class="company-image col-md-5 col-sm-12">
         <img class="image img-fluid" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/company/company-01.jpg" alt="Imagem do interior da linha de produção da empresa Aerocris">
@@ -23,8 +112,37 @@
             <li class="certifications-item"><i class="fa fa-certificate certificate" aria-hidden="true"></i>ISO9001</li>
           </ul>
         </div>
-        <button type="button" class="btn btn-info"><a href="<?php echo get_stylesheet_directory_uri(); ?>/assets/pdf/certificado.pdf"class="btn-certificate" target="_blank">Ver certificados</a></button>
+        <button type="button" class="btn btn-info"><a href="<?php echo get_stylesheet_directory_uri(); ?>/assets/pdf/certificado.pdf"class="btn-certificate" target="_blank">Ver certificações</a></button>
         
+      </div>
+    </div>
+    <div class="row company-info">
+      <div class="col-md-3 company-mvv">
+        <h2 class="company-subtitle">Missão</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Donec luctus, velit ut efficitur maximus, orci nunc aliquam nunc,
+          a mattis nibh urna ut metus. Mauris sodales 
+          urna id elit luctus dictum. Praesent scelerisque lacus ac nunc ultricies porttitor.
+        </p>
+      </div>
+      <div class="col-md-3 company-mvv">
+        <h2 class="company-subtitle">Visão</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Donec luctus, velit ut efficitur maximus, orci nunc aliquam nunc,
+          a mattis nibh urna ut metus. Mauris sodales 
+          urna id elit luctus dictum. Praesent scelerisque lacus ac nunc ultricies porttitor.
+        </p>
+      </div>
+      <div class="col-md-3 company-mvv">
+        <h2 class="company-subtitle">Valores</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Donec luctus, velit ut efficitur maximus, orci nunc aliquam nunc,
+          a mattis nibh urna ut metus. Mauris sodales 
+          urna id elit luctus dictum. Praesent scelerisque lacus ac nunc ultricies porttitor.
+        </p>
       </div>
     </div>
   </section>
@@ -45,7 +163,7 @@
       <div class="col-md-12 products-details">
         <h1 class="products-title anime" ><?php the_field('titulo_produtos_servicos'); ?></h1>
         <p class="products-description anime">
-        <?php the_field('descricao_produtos'); ?>
+          <?php the_field('descricao_produtos'); ?>
         </p>
         <ul class="nav nav-tabs anime" id="myTab" role="tablist">
             <li class="nav-item">
@@ -61,20 +179,20 @@
           <div class="tab-content anime" id="myTabContent">
             <div class="tab-pane fade show all active" id="all" role="tabpanel" aria-labelledby="all-tab">
             <?php if(have_rows('imagens_pecas')): while(have_rows('imagens_pecas')) : the_row(); ?>
-                <img src="<?php the_sub_field('foto_peca'); ?>" alt="..." title="<?php the_sub_field('legenda_peca'); ?>" class="img-thumbnail">
+               <a href="<?php the_sub_field('foto_peca'); ?>"> <img src="<?php the_sub_field('foto_peca'); ?>" alt="<?php the_sub_field('legenda_peca'); ?>" title="<?php the_sub_field('legenda_peca'); ?>" class="img-gallery"/> </a>
             <?php endwhile; else : endif; ?>
             <?php if(have_rows('imagens_ferramental')): while(have_rows('imagens_ferramental')) : the_row(); ?>
-                <img src="<?php the_sub_field('imagem_ferramental'); ?>" alt="..." title="<?php the_sub_field('legenda_ferramenta'); ?>" class="img-thumbnail">
+              <a href="<?php the_sub_field('imagem_ferramental'); ?>">  <img src="<?php the_sub_field('imagem_ferramental'); ?>" alt="<?php the_sub_field('legenda_ferramenta'); ?>" title="<?php the_sub_field('legenda_ferramenta'); ?>" class="img-gallery"/> </a>
             <?php endwhile; else : endif; ?>   
               </div>
             <div class="tab-pane products fade anime" id="products" role="tabpanel" aria-labelledby="products-tab">
             <?php if(have_rows('imagens_pecas')): while(have_rows('imagens_pecas')) : the_row(); ?>
-                <img src="<?php the_sub_field('foto_peca'); ?>" alt="..." title="<?php the_sub_field('legenda_peca'); ?>" class="img-thumbnail">
+               <a href="<?php the_sub_field('foto_peca'); ?>"> <img src="<?php the_sub_field('foto_peca'); ?>" alt="<?php the_sub_field('legenda_peca'); ?>" title="<?php the_sub_field('legenda_peca'); ?>" class="img-gallery"/> </a>
             <?php endwhile; else : endif; ?>
             </div>
             <div class="tab-pane services fade anime" id="services" role="tabpanel" aria-labelledby="services-tab">
             <?php if(have_rows('imagens_ferramental')): while(have_rows('imagens_ferramental')) : the_row(); ?>
-                <img src="<?php the_sub_field('imagem_ferramental'); ?>" alt="..." title="<?php the_sub_field('legenda_ferramenta'); ?>" class="img-thumbnail">
+              <a href="<?php the_sub_field('imagem_ferramental'); ?>">  <img src="<?php the_sub_field('imagem_ferramental'); ?>" alt="<?php the_sub_field('legenda_ferramenta'); ?>" title="<?php the_sub_field('legenda_ferramenta'); ?>" class="img-gallery"/> </a>
             <?php endwhile; else : endif; ?> 
             </div>
           </div>
@@ -106,6 +224,8 @@
 
   <section id="estrutura" class="skeleton container-fluid">
     <h1 class="skeleton-title anime"><?php the_field('titulo_infra_estrutura'); ?></h1>
+    <p class="skeleton-title-description anime">Qualquer empresa que possui os requisitos de Qualidade como a Aerocris, se estrutura em 2
+     pilares principais: Pessoas, através de suas equipes, e Tecnologia através de seus equipamentos.</p>
     <div class="row skeleton-details">
       <div class="skeleton-image anime col-md-5 col-sm-12">
         <img class="image img-fluid" src="<?php the_field('foto_equipe'); ?>" title="<?php the_field('descricao_da_imagem_equipe'); ?>">

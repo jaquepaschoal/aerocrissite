@@ -38,6 +38,8 @@ google.maps.event.addDomListener(window, 'load', carrega_mapa);
     }
   })
 
+  
+
   link.on("click", function() {
     var elemento = $(this).attr("href");
     var posicao = $(elemento).offset().top;
@@ -48,6 +50,15 @@ google.maps.event.addDomListener(window, 'load', carrega_mapa);
     $("html, body").animate({scrollTop:0},1000);
   })
   
+  var linkNews = $(".news-list");
+  
+    linkNews.on("click",function() {
+      var remove = $(".active-news");
+      remove.removeClass("active-news");
+      var elemento = $(this).attr("href");
+      $(elemento).addClass("active-news");
+    })
+    
   debounce = function(func, wait, immediate) {
     var timeout;
     return function() {
@@ -95,3 +106,10 @@ var sizeFunc = function sizeFunc () {
    }
 }
 $(window).on('load', sizeFunc());
+
+
+$(function(){
+  $('.all a').simpleLightbox();
+  $('.products a').simpleLightbox();
+  $('.services a').simpleLightbox();
+});

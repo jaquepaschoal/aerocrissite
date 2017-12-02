@@ -5,11 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title><?php bloginfo('name'); ?> </title>
-
-  <meta name="description" content="Indústria especializada na fabricação de ferramentais (Turn-Key), usinagem de peças de alta precisão e montagem de conjuntos.">
+  <meta name="description" content="<?php bloginfo('description'); ?>">
   <meta property="og:type" content="website"/>
-  <meta property="og:title" content="Aerocris - Usinagem de Peças"/>
-  <meta property="og:description" content="Indústria especializada na fabricação de ferramentais (Turn-Key), usinagem de peças de alta precisão e montagem de conjuntos."/>
+  <meta property="og:title" content="<?php bloginfo('name'); ?> "/>
+  <meta property="og:description" content="<?php bloginfo('description'); ?>"/>
   <meta property="og:url" content="http://aerocris.com"/>
   <meta property="og:image" content="http://aerocris.com/img/og-image.png"/>
 
@@ -19,6 +18,7 @@
 
   <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/assets/css/normalize.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">  
+  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/assets/css/simplelightbox.min.css">
   <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/assets/css/main.min.css">
   <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/assets/css/translate.css">
   <?php wp_head(); ?>
