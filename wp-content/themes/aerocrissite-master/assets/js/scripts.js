@@ -50,6 +50,12 @@ google.maps.event.addDomListener(window, 'load', carrega_mapa);
     $("html, body").animate({scrollTop:0},1000);
   })
   
+
+  $(window).on("load", function() {
+    var first = $('.news-list:first-child').attr("href");
+    $(first).addClass("active-news");
+  })
+
   var linkNews = $(".news-list");
   
     linkNews.on("click",function() {
@@ -58,6 +64,8 @@ google.maps.event.addDomListener(window, 'load', carrega_mapa);
       var elemento = $(this).attr("href");
       $(elemento).addClass("active-news");
     })
+
+  
     
   debounce = function(func, wait, immediate) {
     var timeout;

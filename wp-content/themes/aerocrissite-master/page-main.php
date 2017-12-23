@@ -3,95 +3,44 @@
 ?>
 <?php get_header(); ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
-  <section class="news container-fluid">
+  <section class="news container-fluid" id="noticias">
   <h1 class="news-title anime">Notícias Aerocris</h1>
   <p class="news-text anime">Nesta seção você fica sabendo das últimas novidades da nossa empresa.</p>
     <div class="row news-main anime">
       <div class="col-xl-3 col-md-12 last-news">
         <h2 class="last-news-title">Últimas Notícias</h2>
         <div>
-          <div href="#teste1" class="news-list">
+        <?php if(get_field('noticias')): $i = 0; ?>
+        <?php while(has_sub_field('noticias')): $i++; ?>
+          <div href="#noticia-<?php echo $i; ?>" class="news-list">
             <div class="news-picture">
-              <img class="picture"src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/news/airplane.jpg" alt="">
+              <img class="picture"src="<?php the_sub_field('imagem'); ?>" alt="<?php the_sub_field('titulo_noticia'); ?>">
             </div>
-            <p class="news-thumbnail-title">Este é o titulo da noticia noticia noticia</p>
+            <p class="news-thumbnail-title"><?php the_sub_field('titulo_noticia'); ?></p>
           </div>
-
-          <div href="#teste2" class="news-list">
-            <div class="news-picture">
-              <img class="picture"src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/news/airplane2.jpg" alt="">
-            </div>
-            <p class="news-thumbnail-title">Este é o titulo da noticia noticia noticia</p>
-          </div>
-
-          <div href="#teste3" class="news-list">
-            <div class="news-picture">
-              <img class="picture"src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/news/airplane.jpg" alt="">
-            </div>
-            <p class="news-thumbnail-title">Este é o titulo da noticia noticia noticia</p>
-          </div>
+        <?php endwhile; ?>
+        <?php endif; ?>
         </div>
       </div>
-
-      <article id="teste1" class="col-xl-6 col-md-12 news-complete active-news">
+      
+      <?php if(get_field('noticias')): $i = 0; ?>
+        <?php while(has_sub_field('noticias')): $i++; ?>
+      <article id="noticia-<?php echo $i; ?>" class="col-xl-6 col-md-12 news-complete">
         <div class="news-photo">
-          <img class="photo img-fluid"src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/news/airplane.jpg" alt="">
+          <img class="photo img-fluid"src="<?php the_sub_field('imagem'); ?>" alt="">
         </div>
         <div class="news-description">
-          <h1 class="title-main">Título da notícia1</h1>
+          <h1 class="title-main"><?php the_sub_field('titulo_noticia'); ?></h1>
           <p class="news-content"> 
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lectus est, maximus eget turpis vel, 
-          sagittis ornare lacus. Mauris diam ex, convallis et egestas sagittis, eleifend id eros. Nulla facilisi. 
-          Aenean a purus ex. Suspendisse nec convallis neque, eget blandit risus. In congue dolor quis magna 
-          tristique dictum. Duis vitae risus dignissim ligula gravida commodo et quis felis. Cras sed pretium 
-          ipsum, quis vehicula diam. Proin ac eleifend odio. Curabitur fermentum lacus lorem, a semper nisl 
-          tristique id. In tempus vehicula lacus, sit amet volutpat justo convallis quis. Fusce vehicula mauris 
-          odio, consequat scelerisque dui fermentum vel. Nullam vel varius ex. Maecenas at ligula eu lorem maximus
-           scelerisque vitae ac leo. Quisque quis placerat dolor.
+          <?php the_sub_field('noticia'); ?>
           </p>
         </div>
       </article>
-
-      <article id="teste2" class="col-md-6 news-complete">
-        <div class="news-photo">
-          <img class="photo img-fluid"src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/news/airplane2.jpg" alt="">
-        </div>
-        <div class="news-description">
-          <h1 class="title-main">Título da notícia2</h1>
-          <p class="news-content"> 
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lectus est, maximus eget turpis vel, 
-          sagittis ornare lacus. Mauris diam ex, convallis et egestas sagittis, eleifend id eros. Nulla facilisi. 
-          Aenean a purus ex. Suspendisse nec convallis neque, eget blandit risus. In congue dolor quis magna 
-          tristique dictum. Duis vitae risus dignissim ligula gravida commodo et quis felis. Cras sed pretium 
-          ipsum, quis vehicula diam. Proin ac eleifend odio. Curabitur fermentum lacus lorem, a semper nisl 
-          tristique id. In tempus vehicula lacus, sit amet volutpat justo convallis quis. Fusce vehicula mauris 
-          odio, consequat scelerisque dui fermentum vel. Nullam vel varius ex. Maecenas at ligula eu lorem maximus
-           scelerisque vitae ac leo. Quisque quis placerat dolor.
-          </p>
-        </div>
-      </article>
-
-      <article id="teste3" class="col-md-6 news-complete">
-        <div class="news-photo">
-          <img class="photo img-fluid"src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/news/airplane.jpg" alt="">
-        </div>
-        <div class="news-description">
-          <h1 class="title-main">Título da notícia3</h1>
-          <p class="news-content"> 
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lectus est, maximus eget turpis vel, 
-          sagittis ornare lacus. Mauris diam ex, convallis et egestas sagittis, eleifend id eros. Nulla facilisi. 
-          Aenean a purus ex. Suspendisse nec convallis neque, eget blandit risus. In congue dolor quis magna 
-          tristique dictum. Duis vitae risus dignissim ligula gravida commodo et quis felis. Cras sed pretium 
-          ipsum, quis vehicula diam. Proin ac eleifend odio. Curabitur fermentum lacus lorem, a semper nisl 
-          tristique id. In tempus vehicula lacus, sit amet volutpat justo convallis quis. Fusce vehicula mauris 
-          odio, consequat scelerisque dui fermentum vel. Nullam vel varius ex. Maecenas at ligula eu lorem maximus
-           scelerisque vitae ac leo. Quisque quis placerat dolor.
-          </p>
-        </div>
-      </article>
-    </div>
-  </section>
+      <?php endwhile; ?>
+        <?php endif; ?>
+  </div>
+</section>
+      
   <section id="empresa" class="anime company container-fluid">
     <div class="row company-details">
       <div class="company-image col-md-5 col-sm-12">
@@ -120,28 +69,19 @@
       <div class="col-md-3 company-mvv">
         <h2 class="company-subtitle">Missão</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Donec luctus, velit ut efficitur maximus, orci nunc aliquam nunc,
-          a mattis nibh urna ut metus. Mauris sodales 
-          urna id elit luctus dictum. Praesent scelerisque lacus ac nunc ultricies porttitor.
+        <?php the_field('missao'); ?>
         </p>
       </div>
       <div class="col-md-3 company-mvv">
         <h2 class="company-subtitle">Visão</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Donec luctus, velit ut efficitur maximus, orci nunc aliquam nunc,
-          a mattis nibh urna ut metus. Mauris sodales 
-          urna id elit luctus dictum. Praesent scelerisque lacus ac nunc ultricies porttitor.
+        <?php the_field('visao'); ?>
         </p>
       </div>
       <div class="col-md-3 company-mvv">
         <h2 class="company-subtitle">Valores</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Donec luctus, velit ut efficitur maximus, orci nunc aliquam nunc,
-          a mattis nibh urna ut metus. Mauris sodales 
-          urna id elit luctus dictum. Praesent scelerisque lacus ac nunc ultricies porttitor.
+        <?php the_field('valores'); ?>
         </p>
       </div>
     </div>

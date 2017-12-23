@@ -38,6 +38,26 @@
       width: 80%;
       text-align: center;
 
+      .quality-icon {
+        border: 1px solid $color-primary;
+        padding: 30px 50px;
+        margin: 10px;
+        transition: .3s ease-out;
+
+        p {
+          margin: 0;
+        }
+
+        &:hover {
+          background-color: $color-primary;
+          cursor: pointer;
+        }
+
+        @media (max-width: 576px) { 
+          padding: 30px 31%;
+        }
+      }
+
       @media (max-width: 576px) { 
         flex-wrap: wrap;
       }

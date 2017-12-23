@@ -314,6 +314,28 @@
   text-align: center;
 }
 
+.quality .quality-details .quality-section .quality-icon {
+  border: 1px solid #17a2b8;
+  padding: 30px 50px;
+  margin: 10px;
+  transition: .3s ease-out;
+}
+
+.quality .quality-details .quality-section .quality-icon p {
+  margin: 0;
+}
+
+.quality .quality-details .quality-section .quality-icon:hover {
+  background-color: #17a2b8;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .quality .quality-details .quality-section .quality-icon {
+    padding: 30px 31%;
+  }
+}
+
 @media (max-width: 576px) {
   .quality .quality-details .quality-section {
     flex-wrap: wrap;

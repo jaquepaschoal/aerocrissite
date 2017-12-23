@@ -42,7 +42,7 @@
     <div class="row">
       <div class="col-md-12 header-menu">
         <video autoplay="true" loop muted  class="header-intro">
-          <source src="<?php echo get_stylesheet_directory_uri(); ?>/assets/video/intro.mp4"> 
+          <source src="http://www.nicinovajau.com.br/hackathon/aerocris.mp4"> 
         </video>
         <div class="header-content">
             <nav class="navbar navbar-expand-lg navbar-light ">
